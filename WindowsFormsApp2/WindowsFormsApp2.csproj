@@ -161,5 +161,56 @@
   <ItemGroup>
     <None Include="Resources\info-computer-sound-299367.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page10.monster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page11.monster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page99.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowerClue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page3.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page12.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page5.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page9.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page4.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page7.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page6.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page8.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page1.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsterFace.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkFlower-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

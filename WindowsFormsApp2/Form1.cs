@@ -38,6 +38,7 @@ namespace WindowsFormsApp2
             noButton.Visible = false;
             yesButton.Visible = false;
             gameOverText.Visible = false;
+            computerText.Visible = false;
 
             lock1.Visible = false;
             lock2.Visible = false;
@@ -292,6 +293,7 @@ namespace WindowsFormsApp2
             noButton.Visible = false;
             yesButton.Visible = false;
             gameOverText.Visible = false;
+            passwordInput.Text = "";
         }
         void page2Setup()
         {
@@ -375,6 +377,7 @@ namespace WindowsFormsApp2
             passwordInput.Visible = false;
             enterButton.Visible = false;
             flowerImage.Visible = false;
+            computerText.Visible = false;
             showUp();
             showDown();
             hideRight();
@@ -394,9 +397,9 @@ namespace WindowsFormsApp2
         void page10Setup()
         {
             page = 10;
-            BackgroundImage = Properties.Resources.page10;
             if (monsterSide == 1)
             {
+                BackgroundImage = Properties.Resources.page10;
                 showUp();
                 hideDown();
                 hideRight();
@@ -404,16 +407,15 @@ namespace WindowsFormsApp2
             }
             else
             {
+                BackgroundImage = Properties.Resources.page10_monster;
                 monsterAttack1();
             }
         }
         void page11Setup()
         {
             page = 11;
-            BackgroundImage = Properties.Resources.page11;
             if (monsterSide == 2)
             {
-                page = 11;
                 BackgroundImage = Properties.Resources.page11;
                 showUp();
                 hideDown();
@@ -422,6 +424,7 @@ namespace WindowsFormsApp2
             }
             else
             {
+                BackgroundImage = Properties.Resources.page11_monster;
                 monsterAttack1();
             }
         }
@@ -471,7 +474,7 @@ namespace WindowsFormsApp2
             monsterImage.Visible = true;
             Refresh();
 
-            Thread.Sleep(2000);
+            Thread.Sleep(500);
             page99Setup();
         }
         void monsterAttack2()
@@ -503,6 +506,7 @@ namespace WindowsFormsApp2
                 passwordInput.Visible = false;
                 enterButton.Visible = false;
                 flowerImage.Visible = true;
+                computerText.Visible = true;
             }
             else
             {
@@ -566,7 +570,5 @@ namespace WindowsFormsApp2
         private void passwordInput_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) {}
         private void monsterImage_Click(object sender, EventArgs e) { }
         #endregion
-
-     
     }
 }

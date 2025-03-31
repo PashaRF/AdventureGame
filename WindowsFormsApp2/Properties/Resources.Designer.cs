@@ -157,9 +157,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap page10_monster {
+            get {
+                object obj = ResourceManager.GetObject("page10_monster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap page11 {
             get {
                 object obj = ResourceManager.GetObject("page11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap page11_monster {
+            get {
+                object obj = ResourceManager.GetObject("page11_monster", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
