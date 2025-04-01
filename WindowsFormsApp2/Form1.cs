@@ -26,7 +26,6 @@ namespace WindowsFormsApp2
         int lockNum3 = 0;
         int lockNum4 = 0;
 
-        bool attacked = false;
         Random randGen = new Random();
 
         public PointAndClickGame()
@@ -53,11 +52,14 @@ namespace WindowsFormsApp2
             passwordInput.Visible = false;
             enterButton.Visible = false;
             flowerImage.Visible = false;
+
+            computerText.Enabled = false;
             #endregion
             this.BackgroundImage = Properties.Resources.page1;
             monsterSide = randGen.Next(1, 3);
         }
         #region comboLock
+        // code relevant to the lock on the door
         private void lock1_Click(object sender, EventArgs e)
         {
             SoundPlayer lockdSound = new SoundPlayer(Properties.Resources.lockSound);
@@ -139,6 +141,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region triggeredNavigation
+        //navigation between pages for each arrow
         private void arrowUp_Click(object sender, EventArgs e)
         {
             SoundPlayer clickSound = new SoundPlayer(Properties.Resources.clickSound);
@@ -248,6 +251,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region arrowVisibility
+        // shortcuts for arrow visibility
         void showUp()
         {
             arrowUp.Visible = true;
@@ -282,6 +286,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region pageSetup
+        // shortcuts for setting up each unique page
         void page1Setup()
         {
             page = 1;
@@ -353,6 +358,8 @@ namespace WindowsFormsApp2
             hideRight();
             hideLeft();
             Thread.Sleep(700);
+
+            // the second letter in the morse code should read "o"- there must have been an issue with the morse code generator
 
             SoundPlayer alarmSound = new SoundPlayer(Properties.Resources.alarmSound);
             alarmSound.Play();
@@ -461,6 +468,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region monsterAttack
+        // event triggered if you go under bed and get attacked
         void monsterAttack1()
         {
             hideUp();
@@ -483,6 +491,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region gameOver
+        // game over screen events
         private void noButton_Click(object sender, EventArgs e)
         {
             Thread.Sleep(1000);
@@ -497,6 +506,7 @@ namespace WindowsFormsApp2
         }
         #endregion
         #region computerPuzzle
+        // trigger for next clue
         private void enterButton_Click(object sender, EventArgs e)
         {
             if (passwordInput.Text == "Dog" || passwordInput.Text == "dog" || passwordInput.Text == "DOG")
@@ -516,6 +526,8 @@ namespace WindowsFormsApp2
         #endregion
 
         #region switchCase
+        //
+
         void switchCase()
         {
             switch (page)
@@ -564,6 +576,7 @@ namespace WindowsFormsApp2
         #endregion 
 
         #region mistakeFunctions
+        // these are random functions I accidentally made that I can't delete without errors
         private void Form1_Load(object sender, EventArgs e) {}
         private void attackTimer_Tick(object sender, EventArgs e) {}
         private void monsterLabel_Click(object sender, EventArgs e) {}

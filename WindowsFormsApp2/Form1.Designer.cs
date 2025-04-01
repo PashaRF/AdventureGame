@@ -291,7 +291,7 @@
             this.monsterImage.Margin = new System.Windows.Forms.Padding(0);
             this.monsterImage.Name = "monsterImage";
             this.monsterImage.Size = new System.Drawing.Size(809, 467);
-            this.monsterImage.TabIndex = 26;
+            this.monsterImage.TabIndex = 27;
             this.monsterImage.TabStop = false;
             // 
             // PointAndClickGame
